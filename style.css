@@ -1,0 +1,159 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* outline: red dashed 1px;  */
+}
+
+/* style entire page */
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1d2671 0%, #1c1d21 65%)
+}
+
+/* center everything inside of main container */
+#main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* style box for robot voice machine */
+#voice-machine-container {
+    background: linear-gradient(147deg, #00a1d5 40%, #2B0E66 100%);
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f500bd,
+    0 0 0.8rem #f500bd, 0 0 2.8rem #f500bd, inset 0 0 1.3rem #f500bd;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+/* style title of app */
+#app-title {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 7px #ff00fa, 0 0 10px #ff00fa, 0 0 21px #ff00fa,
+    0 0 42px #ff00fa, 0 0 82px #ff00fa, 0 0 92px #ff00fa, 0 0 102px #ff00fa,
+    0 0 151px #ff00fa;
+    text-align: center;
+}
+/* style text area */
+textarea {
+    min-width: 350px;
+    min-height: 250px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    border-radius: 1rem;
+    background-color: #282828;
+    color: #a3daff;
+    border: 3px solid #00a1d5;
+}
+/* style button box */
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* style speak button */
+#speak-button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #a3daff;
+    background-color: #492e7d;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #00be67,
+    0 0 0.8rem #00be67, 0 0 2.8rem #00be67, inset 0 0 1.3rem #00be67;
+}
+
+/* style speak button on hover */
+#speak-button:hover {
+    cursor: pointer;
+    color: #1d2671;
+    background-color: #a3daff;
+}
+
+/* style footer */
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* style voices button */
+#voices-button {
+    margin: 1rem;
+    font-size: 2.2rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #a3daff;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #00a1d5, 
+    0 0 0.8rem #00a1d5, 0 0 2.8rem #00a1d5, inset 0 0 1.3rem #00a1d5;
+
+}
+
+#voices-button:hover {
+    cursor: pointer;
+    background-color: #492e7d;
+}
+
+#voice-modal {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    border-radius: 1rem;
+    border: .3rem solid #492e7d;
+    background-color: #1d2671;
+    box-shadow: 3.1px 4.2px #2fc0cd;
+}
+
+/*style modal header*/
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/*style modal title*/
+#modal-header h2 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #a3daff;
+}
+
+/*style modal close button*/
+#close-modal {
+    cursor: pointer;
+    border: 0;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #a3daff;
+    background-color: transparent;
+}
+
+/*style select voice dropdown*/
+#voice-list {
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    border-radius: 1rem;
+    background-color: #282828;
+    color: #a3daff;
+    appearance: none;
+    border: 3px solid #00a1d5;
+}

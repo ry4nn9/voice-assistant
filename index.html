@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--connect css styles-->
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--main box to hold everything-->
+        <div id="main-container">
+            <!--box for robot voice machine-->
+            <div id="voice-machine-container">
+                <!--box for title-->
+                <h1 id="app-title">Robot Voice Machine</h1>
+                <!--box for text-->
+                <textarea id="text-input"></textarea>
+                <!--box for speak button-->
+                <div class="button-container">
+                    <button id="speak-button">SPEAK</button>
+                </div> 
+            </div>
+
+            <!--voice selection modal-->
+            <div id="voice-modal">
+                <!--modal header with title and close button-->
+                <div id="modal-header">
+                    <h2>Choose Voice</h2>
+                    <button id="close-modal">X</button>
+                </div>
+                <!--dropdown to select a voice-->
+                <select id="voice-list"></select>
+            </div>
+            <!--footer with button to open voices selection-->
+            <div id="footer">
+                <button id="voices-button">🗣</button>
+            </div>
+        </div>
+
+    <!--connect javascript file-->
+    <script src="app.js"></script>
+    </body>
+</html>
